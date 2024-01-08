@@ -17,7 +17,7 @@ export default {
   <el-page-header>
     <template #content>
       <span class="text-large font-600 mr-5">
-        <router-link to="/">Books</router-link>
+        <router-link to="/books">Books</router-link>
       </span>
       <span class="text-large font-600 mr-5">
         <router-link to="about">About</router-link>
