@@ -1,5 +1,17 @@
 {
   "books": {
-    "main_heading": "My Books"
+    "main_heading": "My Books",
+    "table": {
+      "title": "Book title",
+      "author": "Author",
+      "genre": "Genre",
+      "publication_year": "Publication year",
+      "isbn": "ISBN",
+      "status": "Status",
+      "rating": "Rating"
+    },
+    "books_card": {
+      "heading": "Book Card List"
+    }
   }
 }

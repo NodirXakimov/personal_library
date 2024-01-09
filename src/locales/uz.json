@@ -1,5 +1,17 @@
 {
   "books": {
-    "main_heading": "Mening kitoblarim"
+    "main_heading": "Mening kitoblarim",
+    "table": {
+      "title": "Kitob sarlavhasi",
+      "author": "Muallif",
+      "genre": "Janri",
+      "publication_year": "Chop etilgan yili",
+      "isbn": "ISBN",
+      "status": "O'qilganlik holati",
+      "rating": "Baho"
+    },
+    "books_card": {
+      "heading": "Kitoblar ro'yxati"
+    }
   }
 }
