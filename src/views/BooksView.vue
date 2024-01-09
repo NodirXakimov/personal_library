@@ -29,8 +29,6 @@ export default {
           <el-tag class="ml-2"
                   :type="scope.row.status === 'Reading' ? 'warning' : scope.row.status === 'To Read'? 'danger' : 'success'">
             {{ scope.row.status }}
-            <!--            {{ $t('books.table.status') }}-->
-            <!--            :label="$t('books.table.title')"-->
           </el-tag>
         </template>
       </el-table-column>

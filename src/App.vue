@@ -2,12 +2,18 @@
 export default {
   data() {
     return {
-      activeIndex: '0'
+      activeIndex: '0',
+      loadingStatusButton: false
     }
   },
   methods: {
-    changeLocale() {
-      this.$i18n.locale = this.$i18n.locale === 'en' ? 'uz' : 'en'
+    async changeLocale() {
+      this.loadingStatusButton = true;
+      setTimeout(() => {
+        this.loadingStatusButton = false
+        console.log("test")
+        this.$i18n.locale = this.$i18n.locale === 'en' ? 'uz' : 'en'
+      }, 1000)
     },
     handleSelect(tab, event) {
       console.log(tab, event.target)
@@ -38,12 +44,16 @@ export default {
       </el-space>
     </template>
     <template #extra>
-      <el-button @click="changeLocale" type="primary" class="ml-2">{{ currentLocale }}</el-button>
+      <el-button
+          :loading="loadingStatusButton"
+          class="ml-2"
+          type="primary"
+          @click="changeLocale"
+      >
+        {{ currentLocale }}
+      </el-button>
     </template>
-    <div>
-      <RouterView/>
-
-    </div>
+    <RouterView/>
 
   </el-page-header>
 </template>
