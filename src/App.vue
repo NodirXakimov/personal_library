@@ -8,20 +8,19 @@ export default {
   },
   methods: {
     async changeLocale() {
-      this.loadingStatusButton = true;
+      this.loadingStatusButton = true
       setTimeout(() => {
         this.loadingStatusButton = false
-        console.log("test")
         this.$i18n.locale = this.$i18n.locale === 'en' ? 'uz' : 'en'
-      }, 1000)
-    },
-    handleSelect(tab, event) {
-      console.log(tab, event.target)
+      }, 200)
     }
+    // handleSelect(tab, event) {
+    //   console.log(tab, event.target)
+    // }
   },
   computed: {
     currentLocale() {
-      return this.$i18n.locale === 'en' ? "English" : "O'zbekcha"
+      return this.$i18n.locale === 'en' ? 'English' : 'O\'zbekcha'
     }
   }
 }
@@ -41,19 +40,26 @@ export default {
         <span class="text-large font-600 mr-5">
         <router-link to="about">About</router-link>
       </span>
+        <span class="text-large font-600 mr-5">
+        <router-link to="/users">Users</router-link>
+      </span>
+        <span class="text-large font-600 mr-5">
+        <router-link to="/async-components">Async components</router-link>
+      </span>
+
       </el-space>
     </template>
     <template #extra>
       <el-button
-          :loading="loadingStatusButton"
-          class="ml-2"
-          type="primary"
-          @click="changeLocale"
+        :loading="loadingStatusButton"
+        class="ml-2"
+        type="primary"
+        @click="changeLocale"
       >
         {{ currentLocale }}
       </el-button>
     </template>
-    <RouterView/>
+    <RouterView />
 
   </el-page-header>
 </template>

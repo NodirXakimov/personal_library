@@ -29,16 +29,6 @@
       "status": "Reading",
       "rating": 4.5,
       "image": "hitchhikers_guide.jpg"
-    },
-    {
-      "title": "The Catcher in the Rye",
-      "author": "J.D. Salinger",
-      "genre": "Fiction",
-      "publication_year": 1951,
-      "isbn": "978-0-316-76948-0",
-      "status": "Read",
-      "rating": 4,
-      "image": "catcher_in_the_rye.jpg"
     }
   ]
 }

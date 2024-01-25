@@ -26,7 +26,22 @@ const router = createRouter({
       path: '/books-card',
       name: 'books-card',
       component: () => import('../views/BooksCardView.vue')
-    }
+    },
+    {
+      path: '/users',
+      name: 'users',
+      component: () => import('../views/UsersView.vue')
+    },
+    {
+      path: '/integration-sent-requests',
+      name:'integration-sent-requests',
+      component: () => import('../views/SentRequestsView.vue')
+    },
+    {
+      path: '/async-components',
+      name:'async-components',
+      component: () => import('../views/AsyncComponents.vue')
+    },
   ]
 })
 
